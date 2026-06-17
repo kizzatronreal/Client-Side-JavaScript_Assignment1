@@ -123,4 +123,14 @@ document.addEventListener('DOMContentLoaded', function () {
         var sentence = options1[ind1] + ' ' + options2[ind2] + ' ' + options3[ind3] + ' ' + options4[ind4] + ' ' + options5[ind5] + '.';
         storyText.textContent = sentence;
     });
+    //set all indexes to 0 and clear story
+    resetBtn.addEventListener('click', function () {
+        ind1 = 0; ind2 = 0; ind3 = 0; ind4 = 0; ind5= 0;
+        part1.textContent = options1[ind1];
+        part2.textContent = options2[ind2];
+        part3.textContent = options3[ind3];
+        part4.textContent = options4[ind4];
+        part5.textContent = options5[ind5];
+        storyText.textContent = '(your story will appear here)';
+    });
 })
