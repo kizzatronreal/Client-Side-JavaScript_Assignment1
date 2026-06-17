@@ -105,4 +105,22 @@ document.addEventListener('DOMContentLoaded', function () {
         var sentence = options1[ind1] + ' ' + options2[ind2] + ' ' + options3[ind3] + ' ' + options4[ind4] + ' ' + options5[ind5] + '.';
         storyText.textContent = sentence;
     });
+
+    // pick a random index for each part and update buttons and output
+    randomBtn.addEventListener('click', function () {
+        ind1 = Math.floor(Math.random() * options1.length);
+        ind2 = Math.floor(Math.random() * options2.length);
+        ind3 = Math.floor(Math.random() * options3.length);
+        ind4 = Math.floor(Math.random() * options4.length);
+        ind5 = Math.floor(Math.random() * options5.length);
+        part1.textContent = options1[ind1];
+        part2.textContent = options2[ind2];
+        part3.textContent = options3[ind3];
+        part4.textContent = options4[ind4];
+        part5.textContent = options5[ind5];
+
+        // show story automatically
+        var sentence = options1[ind1] + ' ' + options2[ind2] + ' ' + options3[ind3] + ' ' + options4[ind4] + ' ' + options5[ind5] + '.';
+        storyText.textContent = sentence;
+    });
 })
