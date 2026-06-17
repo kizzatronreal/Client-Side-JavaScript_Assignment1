@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function () {
     part5.addEventListener('click', function () { cycle(options5, 'ind5', part5); });
 
     tell.addEventListener('click', function () {
-        var sentence = options1[idx1] + ' ' + options2[idx2] + ' ' + options3[idx3] + ' ' + options4[idx4] + ' ' + options5[idx5] + '.';
+        var sentence = options1[ind1] + ' ' + options2[ind2] + ' ' + options3[ind3] + ' ' + options4[ind4] + ' ' + options5[ind5] + '.';
         storyText.textContent = sentence;
     });
 })
