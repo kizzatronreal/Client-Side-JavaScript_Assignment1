@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Story Spinner</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <main class="container">
+      <h1>Story Spinner</h1>
+
+      <div class="controls">
+        <div class="control-row">
+          <button id="part1" class="part">Once upon a time</button>
+          <span class="label">(who)</span>
+        </div>
+
+        <div class="control-row">
+          <button id="part2" class="part">went</button>
+          <span class="label">(action)</span>
+        </div>
+
+        <div class="control-row">
+          <button id="part3" class="part">happily</button>
+          <span class="label">(manner)</span>
+        </div>
+
+        <div class="control-row">
+          <button id="part4" class="part">to the</button>
+          <span class="label">(place)</span>
+        </div>
+
+        <div class="control-row">
+          <button id="part5" class="part">park</button>
+          <span class="label">(with what)</span>
+        </div>
+
+        <div class="control-row">
+          <button id="tell" class="tell">Tell my story</button>
+          <button id="random" class="secondary">Random story</button>
+          <button id="reset" class="secondary">Reset</button>
+        </div>
+      </div>
+
+      <section class="output">
+        <h2>Your story</h2>
+        <p id="storyText" class="story-text">(your story will appear here)</p>
+      </section>
+    </main>
+
+    <script src="js/story.js"></script>
+  </body>
+</html>
